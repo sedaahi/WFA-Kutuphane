@@ -58,6 +58,7 @@ namespace WFAKutuphane
             }
             else
             {
+                MessageBox.Show($"Hoşgeldiniz {girisYapan.AdSoyad}");
                 KutuphaneForm kutuphaneForm = new KutuphaneForm(girisYapan);
                 kutuphaneForm.ShowDialog();
             }

@@ -72,7 +72,7 @@ namespace WFAKutuphane
                 kutuphaneYoneticisi = new KutuphaneYoneticisi();
             }
         }
-        
+
 
         private void tsmiCikisYap_Click(object sender, EventArgs e)
         {
@@ -85,20 +85,22 @@ namespace WFAKutuphane
             //Kütüphaneden seçili kitabı kaldırıcam ve o an ki login olmuş kullanıcının ödünç aldığı kitaplara ekliycem
             //Ve o an ki tarih bilgisini kitabın ödünç alınma tarihine yazıcam
             // 1. adım seçili kitabı bul
+            Kitap aranaKitap = (Kitap)dgvKitaplar.SelectedRows[0].DataBoundItem;
             //2. adım buldugum kitabı kullanıcının ödünç aldıgı kitaplardan silicem
             //3.adım buldugum kitbı kutuphanedeki kitaplardan silicem
             DataGuncelle();
-            
+
         }
         private void dgvKitaplar_MouseClick(object sender, MouseEventArgs e)
         {
-                //Sağ click olduğunda
-            if (e.Button==MouseButtons.Right) //satırlarda sağ click oldugunda gostermek için.Gri alanda sağ clik olursa çalışmaycak
+            //Sağ click olduğunda
+            if (e.Button == MouseButtons.Right) //satırlarda sağ click oldugunda gostermek için.Gri alanda sağ clik olursa çalışmaycak
             {
                 var position = dgvKitaplar.HitTest(e.X, e.Y).RowIndex;
-                if (position>=0)//sağ tık yazı varken çalışacak yokken çalışmayacak
+                if (position >= 0)//sağ tık yazı varken çalışacak yokken çalışmayacak
                 {
-                contexMenuStrip1.Show(dgvKitaplar, new Point(e.X, e.Y));
+                    contexMenuStrip1.Show(dgvKitaplar, new Point(e.X, e.Y));
+                    dgvKitaplar.Rows[position].Selected = true; //sağ tık yaptıgımız satırı seçer.
 
                 }
             }
@@ -113,7 +115,7 @@ namespace WFAKutuphane
 
         private void tsmiHesabim_Click(object sender, EventArgs e)
         {
-            HesabimForm hesabimForm = new HesabimForm(kullanici,kutuphaneYoneticisi);
+            HesabimForm hesabimForm = new HesabimForm(kullanici, kutuphaneYoneticisi);
             hesabimForm.ShowDialog();
         }
 

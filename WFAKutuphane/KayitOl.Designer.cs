@@ -39,13 +39,15 @@ namespace WFAKutuphane
             this.txtParolaTekrar = new System.Windows.Forms.TextBox();
             this.btnKayitOl = new System.Windows.Forms.Button();
             this.lblCheck = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(25, 29);
+            this.label1.Location = new System.Drawing.Point(12, 73);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 17);
             this.label1.TabIndex = 0;
@@ -55,7 +57,7 @@ namespace WFAKutuphane
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(25, 62);
+            this.label2.Location = new System.Drawing.Point(12, 106);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(102, 17);
             this.label2.TabIndex = 1;
@@ -65,7 +67,7 @@ namespace WFAKutuphane
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(25, 96);
+            this.label3.Location = new System.Drawing.Point(12, 140);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 17);
             this.label3.TabIndex = 2;
@@ -75,7 +77,7 @@ namespace WFAKutuphane
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(25, 131);
+            this.label4.Location = new System.Drawing.Point(12, 175);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(113, 17);
             this.label4.TabIndex = 3;
@@ -84,7 +86,7 @@ namespace WFAKutuphane
             // txtAdiniz
             // 
             this.txtAdiniz.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.txtAdiniz.Location = new System.Drawing.Point(140, 29);
+            this.txtAdiniz.Location = new System.Drawing.Point(140, 70);
             this.txtAdiniz.Name = "txtAdiniz";
             this.txtAdiniz.Size = new System.Drawing.Size(100, 20);
             this.txtAdiniz.TabIndex = 4;
@@ -92,7 +94,7 @@ namespace WFAKutuphane
             // txtKullaniciAdi
             // 
             this.txtKullaniciAdi.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.txtKullaniciAdi.Location = new System.Drawing.Point(140, 62);
+            this.txtKullaniciAdi.Location = new System.Drawing.Point(140, 105);
             this.txtKullaniciAdi.Name = "txtKullaniciAdi";
             this.txtKullaniciAdi.Size = new System.Drawing.Size(100, 20);
             this.txtKullaniciAdi.TabIndex = 5;
@@ -101,7 +103,7 @@ namespace WFAKutuphane
             // txtParola
             // 
             this.txtParola.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.txtParola.Location = new System.Drawing.Point(140, 96);
+            this.txtParola.Location = new System.Drawing.Point(140, 139);
             this.txtParola.Name = "txtParola";
             this.txtParola.PasswordChar = '*';
             this.txtParola.Size = new System.Drawing.Size(100, 20);
@@ -111,7 +113,7 @@ namespace WFAKutuphane
             // txtParolaTekrar
             // 
             this.txtParolaTekrar.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.txtParolaTekrar.Location = new System.Drawing.Point(140, 131);
+            this.txtParolaTekrar.Location = new System.Drawing.Point(140, 172);
             this.txtParolaTekrar.Name = "txtParolaTekrar";
             this.txtParolaTekrar.PasswordChar = '*';
             this.txtParolaTekrar.Size = new System.Drawing.Size(100, 20);
@@ -121,7 +123,7 @@ namespace WFAKutuphane
             // btnKayitOl
             // 
             this.btnKayitOl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnKayitOl.Location = new System.Drawing.Point(165, 184);
+            this.btnKayitOl.Location = new System.Drawing.Point(165, 201);
             this.btnKayitOl.Name = "btnKayitOl";
             this.btnKayitOl.Size = new System.Drawing.Size(75, 29);
             this.btnKayitOl.TabIndex = 8;
@@ -137,11 +139,22 @@ namespace WFAKutuphane
             this.lblCheck.Size = new System.Drawing.Size(0, 13);
             this.lblCheck.TabIndex = 9;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::WFAKutuphane.Properties.Resources.reader;
+            this.pictureBox1.Location = new System.Drawing.Point(74, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
             // KayitOl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(252, 225);
+            this.ClientSize = new System.Drawing.Size(252, 239);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblCheck);
             this.Controls.Add(this.btnKayitOl);
             this.Controls.Add(this.txtParolaTekrar);
@@ -155,6 +168,7 @@ namespace WFAKutuphane
             this.Name = "KayitOl";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "KayitOl";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -172,5 +186,6 @@ namespace WFAKutuphane
         private System.Windows.Forms.TextBox txtParolaTekrar;
         private System.Windows.Forms.Button btnKayitOl;
         private System.Windows.Forms.Label lblCheck;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
