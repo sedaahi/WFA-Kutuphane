@@ -42,7 +42,7 @@ namespace WFAKutuphane
             this.Türler = new System.Windows.Forms.Label();
             this.contexMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tsmiKitapOduncAl = new System.Windows.Forms.ToolStripMenuItem();
-            this.kitabıİmhaEtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiKitapImhaEt = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKitaplar)).BeginInit();
             this.contexMenuStrip1.SuspendLayout();
@@ -121,6 +121,7 @@ namespace WFAKutuphane
             this.txtArama.Name = "txtArama";
             this.txtArama.Size = new System.Drawing.Size(128, 20);
             this.txtArama.TabIndex = 4;
+            this.txtArama.TextChanged += new System.EventHandler(this.txtArama_TextChanged);
             // 
             // cmbTurler
             // 
@@ -130,6 +131,7 @@ namespace WFAKutuphane
             this.cmbTurler.Name = "cmbTurler";
             this.cmbTurler.Size = new System.Drawing.Size(129, 21);
             this.cmbTurler.TabIndex = 5;
+            this.cmbTurler.SelectedIndexChanged += new System.EventHandler(this.cmbTurler_SelectedIndexChanged);
             // 
             // Türler
             // 
@@ -144,22 +146,23 @@ namespace WFAKutuphane
             // 
             this.contexMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiKitapOduncAl,
-            this.kitabıİmhaEtToolStripMenuItem});
+            this.tsmiKitapImhaEt});
             this.contexMenuStrip1.Name = "contexMenuStrip1";
-            this.contexMenuStrip1.Size = new System.Drawing.Size(155, 48);
+            this.contexMenuStrip1.Size = new System.Drawing.Size(181, 70);
             // 
             // tsmiKitapOduncAl
             // 
             this.tsmiKitapOduncAl.Name = "tsmiKitapOduncAl";
-            this.tsmiKitapOduncAl.Size = new System.Drawing.Size(154, 22);
+            this.tsmiKitapOduncAl.Size = new System.Drawing.Size(180, 22);
             this.tsmiKitapOduncAl.Text = "Kitap Ödünç Al";
             this.tsmiKitapOduncAl.Click += new System.EventHandler(this.tsmiKitapOduncAl_Click);
             // 
-            // kitabıİmhaEtToolStripMenuItem
+            // tsmiKitapImhaEt
             // 
-            this.kitabıİmhaEtToolStripMenuItem.Name = "kitabıİmhaEtToolStripMenuItem";
-            this.kitabıİmhaEtToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.kitabıİmhaEtToolStripMenuItem.Text = "Kitabı İmha Et";
+            this.tsmiKitapImhaEt.Name = "tsmiKitapImhaEt";
+            this.tsmiKitapImhaEt.Size = new System.Drawing.Size(180, 22);
+            this.tsmiKitapImhaEt.Text = "Kitabı İmha Et";
+            this.tsmiKitapImhaEt.Click += new System.EventHandler(this.tsmiKitapImhaEt_Click);
             // 
             // KutuphaneForm
             // 
@@ -201,6 +204,6 @@ namespace WFAKutuphane
         private System.Windows.Forms.Label Türler;
         private System.Windows.Forms.ContextMenuStrip contexMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem tsmiKitapOduncAl;
-        private System.Windows.Forms.ToolStripMenuItem kitabıİmhaEtToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tsmiKitapImhaEt;
     }
 }

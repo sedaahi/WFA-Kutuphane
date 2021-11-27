@@ -135,5 +135,8 @@
   <ItemGroup>
     <None Include="Resources\reader.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Yapilacaklar.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

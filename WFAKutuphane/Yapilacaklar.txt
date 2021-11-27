@@ -1,0 +1,16 @@
+﻿Giris yapan kullanıcıyı kutuphaneformuna taşıyınız. (+)
+KutuphaneForm'da kutuphaneYoneticisi oluşturunuz.(+)
+Json serialize deserialize yap açılırken ve kapanırken(+)
+TurEkleme metodu yap. Combobox'a ilk itemi "Hepsi" geriye kalanlar KitapTur enum'ı.(+)
+DataGuncelle metodu yap. dgvKitapların DataSource'una kutuphaneYoneticisindeki kitapları atıcak. (+)
+Hesabim'a tıklanınca hesabım formu açılsın. HesabimFormuna giris yapan kullanıcıyı ve kutuphaneYoneticisinide buraya taşıcam.(+)
+Bağış Yap'a tıklandığında bagisForm'u açılsın. KutuphaneYoneticisini tasicam.(+)
+BagisFormunu tamamlayınız.(kutuphaneYoneticisindeki kitapBagis metodunu kullanmak.)(+)
+HesabimFormu tamamlayınız.
+KitapOduncAl işlemini tamamlayınız.(KutuphaneForm)
+Kitap Teslim Et özelliğini yapınız.(Hesabım Form)
+Türler değiştiğinde dgvKitaplar filtrelensin (KutuphaneForm)
+Arama yerinde textChange olduğunda dgvKitaplar filtrelensin (KutuphaneForm)
+ÖDEV
+
+Kitap imha et özelliği ekleyiniz.

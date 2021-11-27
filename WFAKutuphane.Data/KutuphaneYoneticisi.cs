@@ -10,7 +10,19 @@ namespace WFAKutuphane.Data
     {
         public KutuphaneYoneticisi()
         {
-            Kitaplar = new List<Kitap>();
+            //Kitaplar = new List<Kitap>(); //otomatik eklensin bir kitap diye aşağıdaki gibi yaptık boş olsun elle ekleyelim deseydik böyle bırakırdık.
+            Kitaplar = new List<Kitap>()
+            {
+                new Kitap()
+                {
+                    Aciklama = "Biyografi Kitabı",
+                    Ad = "Tesla",
+                    BasimYili = DateTime.Now,
+                    KitapTur = KitapTur.Biyografi,
+                    SayfaSayisi = 100,
+                    YazarAd = "Tesla"
+                }
+            };
         }
         public List<Kitap> Kitaplar { get; set; }
         public void KitapBagisi(Kitap kitap, int adet) 
@@ -24,6 +36,10 @@ namespace WFAKutuphane.Data
         {
             //Teslim ederken oduncalinmaTarihi null yapılabilir.
             Kitaplar.Add(kitap);
+        }
+        public void KitapImhaEt(Kitap kitap)
+        {
+            Kitaplar.Remove(kitap);
         }
 
     }
